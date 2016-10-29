@@ -2,7 +2,7 @@
 :::::::::::::::::::::初始化编译环境:::::::::::::::::::::
 C:
 cd "C:\Program Files (x86)\Microsoft Visual C++ Build Tools"
-call vcbuildtools.bat
+call vcbuildtools.bat amd64
 :::::::::::::::::::::跳转到脚本目录:::::::::::::::::::::
 %DRIVER%
 cd %PROJPATH%
