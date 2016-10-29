@@ -20,5 +20,5 @@ include_directories($ENV{SLN_ROOT}/include)
 link_directories($ENV{SLN_ROOT}/lib)
 ##############################################################
 add_subdirectory(library)
-add_subdirectory(normal)
+add_subdirectory(serialize)
 ##############################################################
