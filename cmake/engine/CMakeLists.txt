@@ -27,7 +27,15 @@ set( sources Engine.cpp
 	handle/Handle.cpp
 	handle/HandleConfig.cpp
 	handle/HandleCount.cpp
-	handle/HandleEngine.cpp)
+	handle/HandleEngine.cpp
+	curl/CurlValue.cpp
+	curl/CurlFile.cpp
+	curl/CurlString.cpp
+	curl/BaseCurl.cpp
+	curl/HttpCurl.cpp
+	curl/CurlEngine.cpp
+	curl/CurlContext.cpp
+	curl/MultiCurl.cpp)
 	
 SET( headers Engine.hpp
 	aspect/value/Buffer.hpp
@@ -57,7 +65,16 @@ SET( headers Engine.hpp
 	handle/Handle.hpp
 	handle/HandleConfig.hpp
 	handle/HandleCount.hpp
-	handle/HandleEngine.hpp)
+	handle/HandleEngine.hpp
+	curl/CurlValue.hpp
+	curl/CurlFile.hpp
+	curl/CurlString.hpp
+	curl/BaseCurl.hpp
+	curl/HttpCurl.hpp
+	curl/CurlEngine.hpp
+	curl/CurlContext.hpp
+	curl/MultiCurl.hpp 
+	curl/EcurlValue.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})
