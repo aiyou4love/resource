@@ -23,4 +23,5 @@ link_directories($ENV{SLN_ROOT}/lib)
 ##############################################################
 add_subdirectory(library)
 add_subdirectory(serialize)
+add_subdirectory(engine)
 ##############################################################
