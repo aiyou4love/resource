@@ -11,6 +11,11 @@ set( sources
 	normal/count/BitCount.cpp
 	normal/count/Int32Count.cpp
 	normal/count/IntCount.cpp
+	normal/value/Buffer.cpp
+	normal/value/Value.cpp
+	normal/value/IndexValue.cpp
+	normal/value/PacketMgr.cpp
+	normal/value/ValueMgr.cpp
 	workDirectory/WorkDirectory.cpp
 	log/LogEngine.cpp
 	lifecycle/LifeCycle.cpp
@@ -32,7 +37,10 @@ set( sources
 	time/TimeCount.cpp
 	time/TimeDuration.cpp
 	time/TimeEnd.cpp
-	time/TimeStart.cpp)
+	time/TimeStart.cpp
+	lua/LuaWriter.cpp
+	lua/LuaThread.cpp
+	lua/LuaEngine.cpp)
 	
 SET( headers
 	normal/normal/CommonMethod.hpp
@@ -47,6 +55,11 @@ SET( headers
 	normal/count/BitCount.hpp
 	normal/count/Int32Count.hpp
 	normal/count/IntCount.hpp
+	normal/value/Buffer.hpp
+	normal/value/Value.hpp
+	normal/value/IndexValue.hpp
+	normal/value/PacketMgr.hpp
+	normal/value/ValueMgr.hpp
 	workDirectory/WorkDirectory.hpp
 	workDirectory/EappType.hpp
 	log/LogEngine.hpp
@@ -77,7 +90,10 @@ SET( headers
 	time/TimeCount.hpp
 	time/TimeDuration.hpp
 	time/TimeEnd.hpp
-	time/TimeStart.hpp)
+	time/TimeStart.hpp
+	lua/LuaWriter.hpp
+	lua/LuaThread.hpp
+	lua/LuaEngine.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})
