@@ -2,7 +2,7 @@ project(serialize)
 
 set( prefixs ${SRC_ROOT}/${PROJECT_NAME} )
 
-set( sources
+set( sources Serialize.cpp
 	normal/normal/CommonMethod.cpp
 	normal/class/ClassMethod.cpp
 	normal/convert/ConvertValue.cpp
@@ -40,9 +40,15 @@ set( sources
 	time/TimeStart.cpp
 	lua/LuaWriter.cpp
 	lua/LuaThread.cpp
-	lua/LuaEngine.cpp)
+	lua/LuaEngine.cpp
+	handle/Context.cpp
+	handle/IContextClone.cpp
+	handle/Handle.cpp
+	handle/HandleConfig.cpp
+	handle/HandleCount.cpp
+	handle/HandleEngine.cpp)
 	
-SET( headers
+SET( headers Serialize.hpp
 	normal/normal/CommonMethod.hpp
 	normal/normal/Instance.hpp
 	normal/normal/DefaultValue.hpp
@@ -93,7 +99,13 @@ SET( headers
 	time/TimeStart.hpp
 	lua/LuaWriter.hpp
 	lua/LuaThread.hpp
-	lua/LuaEngine.hpp)
+	lua/LuaEngine.hpp
+	handle/Context.hpp
+	handle/IContextClone.hpp
+	handle/Handle.hpp
+	handle/HandleConfig.hpp
+	handle/HandleCount.hpp
+	handle/HandleEngine.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})
