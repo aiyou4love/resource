@@ -23,7 +23,9 @@ foreach(src IN ITEMS ${headers})
 	SET(HDRS ${HDRS} ${prefixs}/${src})
 endforeach(src)
 
-add_library( ${PROJECT_NAME} STATIC ${SRCS} ${HDRS} )
+add_library( ${PROJECT_NAME} SHARED ${SRCS} ${HDRS} )
+target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES}
+	lua serialize engine system dispatch curl)
 
 unset(headers)
 unset(sources)
