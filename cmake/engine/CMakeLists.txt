@@ -38,7 +38,9 @@ set( sources Engine.cpp
 	url/curl/MultiCurl.cpp
 	url/url/UrlInfo.cpp
 	url/url/UrlParser.cpp
-	url/url/UrlMgr.cpp)
+	url/url/UrlMgr.cpp
+	upint/Upint.cpp
+	upint/UpintEngine.cpp)
 	
 SET( headers Engine.hpp
 	aspect/value/Buffer.hpp
@@ -81,7 +83,9 @@ SET( headers Engine.hpp
 	url/url/EurlType.hpp
 	url/url/UrlInfo.hpp
 	url/url/UrlParser.hpp
-	url/url/UrlMgr.hpp)
+	url/url/UrlMgr.hpp
+	upint/Upint.hpp
+	upint/UpintEngine.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})
