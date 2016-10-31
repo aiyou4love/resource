@@ -28,14 +28,17 @@ set( sources Engine.cpp
 	handle/HandleConfig.cpp
 	handle/HandleCount.cpp
 	handle/HandleEngine.cpp
-	curl/CurlValue.cpp
-	curl/CurlFile.cpp
-	curl/CurlString.cpp
-	curl/BaseCurl.cpp
-	curl/HttpCurl.cpp
-	curl/CurlEngine.cpp
-	curl/CurlContext.cpp
-	curl/MultiCurl.cpp)
+	url/curl/CurlValue.cpp
+	url/curl/CurlFile.cpp
+	url/curl/CurlString.cpp
+	url/curl/BaseCurl.cpp
+	url/curl/HttpCurl.cpp
+	url/curl/CurlEngine.cpp
+	url/curl/CurlContext.cpp
+	url/curl/MultiCurl.cpp
+	url/url/UrlInfo.cpp
+	url/url/UrlParser.cpp
+	url/url/UrlMgr.cpp)
 	
 SET( headers Engine.hpp
 	aspect/value/Buffer.hpp
@@ -66,15 +69,19 @@ SET( headers Engine.hpp
 	handle/HandleConfig.hpp
 	handle/HandleCount.hpp
 	handle/HandleEngine.hpp
-	curl/CurlValue.hpp
-	curl/CurlFile.hpp
-	curl/CurlString.hpp
-	curl/BaseCurl.hpp
-	curl/HttpCurl.hpp
-	curl/CurlEngine.hpp
-	curl/CurlContext.hpp
-	curl/MultiCurl.hpp 
-	curl/EcurlValue.hpp)
+	url/curl/CurlValue.hpp
+	url/curl/CurlFile.hpp
+	url/curl/CurlString.hpp
+	url/curl/BaseCurl.hpp
+	url/curl/HttpCurl.hpp
+	url/curl/CurlEngine.hpp
+	url/curl/CurlContext.hpp
+	url/curl/MultiCurl.hpp
+	url/curl/EcurlValue.hpp
+	url/url/EurlType.hpp
+	url/url/UrlInfo.hpp
+	url/url/UrlParser.hpp
+	url/url/UrlMgr.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})

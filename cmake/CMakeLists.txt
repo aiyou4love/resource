@@ -21,7 +21,14 @@ set( SRC_ROOT $ENV{SLN_ROOT}/source )
 include_directories($ENV{SLN_ROOT}/include)
 link_directories($ENV{SLN_ROOT}/lib)
 ##############################################################
+set(Boost_USE_STATIC_LIBS TRUE)
+find_package(Boost COMPONENTS system exception date_time regex chrono thread filesystem log log_setup REQUIRED)
+##############################################################
 add_subdirectory(library)
 add_subdirectory(serialize)
 add_subdirectory(engine)
+add_subdirectory(system)
+add_subdirectory(dispatch)
+add_subdirectory(aspect)
+add_subdirectory(autoup)
 ##############################################################
