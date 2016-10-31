@@ -13,5 +13,5 @@ cd $PROJNAME
 #######################执行编译#######################
 cmake $SLN_ROOT/resource/cmake -D__SLNAME__=$SLNAME -D__PROJNAME__=$PROJNAME
 make
-make install
+#make install
 #######################编译完成#######################

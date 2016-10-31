@@ -20,6 +20,6 @@ cd %PROJNAME%
 ::::::::::::::::::::::::执行编译::::::::::::::::::::::::
 cmake %SLN_ROOT%/resource/cmake -D__SLNAME__=%SLNAME% -D__PROJNAME__=%PROJNAME%
 nmake
-nmake install
+::nmake install
 ::::::::::::::::::::::::编译完成::::::::::::::::::::::::
 @echo on
