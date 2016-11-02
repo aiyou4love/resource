@@ -40,7 +40,26 @@ set( sources Engine.cpp
 	url/url/UrlParser.cpp
 	url/url/UrlMgr.cpp
 	upint/Upint.cpp
-	upint/UpintEngine.cpp)
+	upint/UpintEngine.cpp
+	net/netIp/NetInfo.cpp
+	net/netIp/NetNo.cpp
+	net/netIp/NetIp.cpp
+	net/netIp/NetIpMgr.cpp
+	net/ioservice/IoService.cpp
+	net/session/ISessionRemove.cpp
+	net/session/Session.cpp
+	net/send/ISend.cpp
+	net/send/SelfSend.cpp
+	net/send/ServerSend.cpp
+	net/connect/ConnectInfo.cpp
+	net/connect/Connector.cpp
+	net/connect/ConnectorMgr.cpp
+	net/connect/ConnectEngine.cpp
+	net/connect/ConnectRemove.cpp
+	net/accept/AcceptorMgr.cpp
+	net/accept/AcceptEngine.cpp
+	net/accept/SessionMgr.cpp
+	net/accept/AcceptRemove.cpp)
 	
 SET( headers Engine.hpp
 	aspect/value/Buffer.hpp
@@ -85,7 +104,26 @@ SET( headers Engine.hpp
 	url/url/UrlParser.hpp
 	url/url/UrlMgr.hpp
 	upint/Upint.hpp
-	upint/UpintEngine.hpp)
+	upint/UpintEngine.hpp
+	net/netIp/NetInfo.hpp
+	net/netIp/NetNo.hpp
+	net/netIp/NetIp.hpp
+	net/netIp/NetIpMgr.hpp
+	net/ioservice/IoService.hpp
+	net/session/ISessionRemove.hpp
+	net/session/Session.hpp
+	net/send/ISend.hpp
+	net/send/SelfSend.hpp
+	net/send/ServerSend.hpp
+	net/connect/ConnectInfo.hpp
+	net/connect/Connector.hpp
+	net/connect/ConnectorMgr.hpp
+	net/connect/ConnectEngine.hpp
+	net/connect/ConnectRemove.hpp
+	net/accept/AcceptorMgr.hpp
+	net/accept/AcceptEngine.hpp
+	net/accept/SessionMgr.hpp
+	net/accept/AcceptRemove.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})
