@@ -42,6 +42,8 @@ endforeach(src)
 add_executable( ${PROJECT_NAME} ${SRCS} ${HDRS} )
 target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES} curl)
 
+install(TARGETS ${PROJECT_NAME} DESTINATION .)
+
 unset(headers)
 unset(sources)
 unset(prefixs)
