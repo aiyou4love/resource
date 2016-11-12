@@ -11,7 +11,7 @@ set( sources Serialize.cpp
 	normal/count/BitCount.cpp
 	normal/count/Int32Count.cpp
 	normal/count/IntCount.cpp
-	normal/count/IntArrayM.cpp
+	normal/count/IntArray.cpp
 	workDirectory/WorkDirectory.cpp
 	log/LogEngine.cpp
 	lifecycle/LifeCycle.cpp
@@ -41,8 +41,6 @@ SET( headers Serialize.hpp
 	normal/string/StringMethod.hpp 
 	normal/string/StringTable.hpp
 	normal/count/IntArray.hpp
-	normal/count/IntArrayN.hpp
-	normal/count/IntArrayM.hpp
 	normal/count/BitCount.hpp
 	normal/count/Int32Count.hpp
 	normal/count/IntCount.hpp
