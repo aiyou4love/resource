@@ -59,7 +59,19 @@ set( sources Engine.cpp
 	net/accept/AcceptorMgr.cpp
 	net/accept/AcceptEngine.cpp
 	net/accept/SessionMgr.cpp
-	net/accept/AcceptRemove.cpp)
+	net/accept/AcceptRemove.cpp
+	count/BitCount.cpp
+	count/CountEngine.cpp
+	count/CountIndex.cpp
+	count/ICount.cpp
+	count/Int16Count.cpp
+	count/Int32Count.cpp
+	count/Int4Count.cpp
+	count/Int8Count.cpp
+	count/IntArray.cpp
+	count/IntCount.cpp
+	count/IntEntity.cpp
+	count/IntIndex.cpp)
 	
 SET( headers Engine.hpp
 	aspect/value/Buffer.hpp
@@ -123,7 +135,19 @@ SET( headers Engine.hpp
 	net/accept/AcceptorMgr.hpp
 	net/accept/AcceptEngine.hpp
 	net/accept/SessionMgr.hpp
-	net/accept/AcceptRemove.hpp)
+	net/accept/AcceptRemove.hpp
+	count/BitCount.hpp
+	count/CountEngine.hpp
+	count/CountIndex.hpp
+	count/ICount.hpp
+	count/Int16Count.hpp
+	count/Int32Count.hpp
+	count/Int4Count.hpp
+	count/Int8Count.hpp
+	count/IntArray.hpp
+	count/IntCount.hpp
+	count/IntEntity.hpp
+	count/IntIndex.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})

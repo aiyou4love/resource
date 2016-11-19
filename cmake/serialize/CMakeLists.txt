@@ -8,13 +8,6 @@ set( sources Serialize.cpp
 	normal/convert/ConvertValue.cpp
 	normal/string/StringMethod.cpp
 	normal/string/StringTable.cpp
-	normal/count/BitCount.cpp
-	normal/count/Int4Count.cpp
-	normal/count/Int8Count.cpp
-	normal/count/Int16Count.cpp
-	normal/count/Int32Count.cpp
-	normal/count/IntCount.cpp
-	normal/count/IntArray.cpp
 	workDirectory/WorkDirectory.cpp
 	log/LogEngine.cpp
 	lifecycle/LifeCycle.cpp
@@ -43,13 +36,6 @@ SET( headers Serialize.hpp
 	normal/convert/ConvertValue.hpp
 	normal/string/StringMethod.hpp 
 	normal/string/StringTable.hpp
-	normal/count/IntArray.hpp
-	normal/count/BitCount.hpp
-	normal/count/Int4Count.hpp
-	normal/count/Int8Count.hpp
-	normal/count/Int16Count.hpp
-	normal/count/Int32Count.hpp
-	normal/count/IntCount.hpp
 	workDirectory/WorkDirectory.hpp
 	workDirectory/EappType.hpp
 	log/LogEngine.hpp
