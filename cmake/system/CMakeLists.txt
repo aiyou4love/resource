@@ -24,7 +24,18 @@ set( sources System.cpp
 	time/time/ServerTime.cpp
 	time/time/TimeEngine.cpp
 	time/server/cServerTime.cpp
-	time/client/cServerTime.cpp)
+	time/client/cServerTime.cpp
+	task/engine/TaskConfig.cpp
+	task/entity/DailyTask.cpp
+	task/entity/TaskAccept.cpp
+	task/entity/TaskFinish.cpp
+	task/entity/EntityTask.cpp
+	task/entity/SingleTask.cpp
+	task/client/cTaskConfig.cpp
+	task/server/cTaskConfig.cpp
+	task/engine/TaskEngine.cpp
+	activity/ActivityConfig.cpp
+	activity/ActivityEngine.cpp)
 	
 SET( headers System.hpp
 	ui/manager/IUiEngine.hpp
@@ -55,7 +66,20 @@ SET( headers System.hpp
 	time/time/ServerTime.hpp
 	time/time/TimeEngine.hpp
 	time/server/cServerTime.hpp
-	time/client/cServerTime.hpp)
+	time/client/cServerTime.hpp
+	task/engine/EtaskType.hpp
+	task/engine/EopenType.hpp
+	task/engine/TaskConfig.hpp
+	task/entity/DailyTask.hpp
+	task/entity/TaskAccept.hpp
+	task/entity/TaskFinish.hpp
+	task/entity/EntityTask.hpp
+	task/entity/SingleTask.hpp
+	task/client/cTaskConfig.hpp
+	task/server/cTaskConfig.hpp
+	task/engine/TaskEngine.hpp
+	activity/ActivityConfig.hpp
+	activity/ActivityEngine.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})
