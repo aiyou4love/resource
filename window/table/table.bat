@@ -14,7 +14,7 @@ if not exist asset (
 	cd asset
 	mkdir table
 	mkdir config
-	mkdir plugin
+	mkdir aspect
 	mkdir ui
 	mkdir lua
 	cd lua
@@ -31,8 +31,8 @@ if not exist download (
 if not exist update (
 	mkdir update
 )
-if not exist plugin (
-	mkdir plugin
+if not exist aspect (
+	mkdir aspect
 )
 if not exist log (
 	mkdir log
