@@ -19,7 +19,7 @@ if not exist %PROJNAME% (
 cd %PROJNAME%
 ::::::::::::::::::::::::执行编译::::::::::::::::::::::::
 cmake %SLN_ROOT%/resource/cmake -G"Visual Studio 15 Win64" -D__SLNAME__=%SLNAME% -D__PROJNAME__=%PROJNAME%
-msbuild %PROJNAME%.sln /maxcpucount:4
+msbuild %PROJNAME%.sln /maxcpucount:8
 msbuild INSTALL.vcxproj
 ::::::::::::::::::::::::编译完成::::::::::::::::::::::::
 @echo on
