@@ -1,6 +1,8 @@
 ##############################################################
 cmake_minimum_required(VERSION 3.0)
 ##############################################################
+project(${__PROJNAME__})
+##############################################################
 if(MSVC)
 	add_definitions( "-D_WIN32_WINNT=0x0601" )
 	add_definitions( -D_CRT_SECURE_NO_WARNINGS )
