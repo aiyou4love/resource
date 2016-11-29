@@ -17,7 +17,10 @@ if not exist asset (
 	mkdir plugin
 	mkdir ui
 	mkdir lua
-	cd ..
+	cd lua
+	mkdir platform
+	mkdir common
+	cd ..\..
 )
 if not exist storage (
 	mkdir storage
@@ -39,6 +42,12 @@ cd %SLN_ROOT%
 resource\tools\command\consoleui.exe -t resource/gameTb/%PROJNAME%/setting %SLNAME%/binary/windows/%PROJNAME%/asset/config
 resource\tools\command\consoleui.exe -t resource/gameTb/%PROJNAME%/table %SLNAME%/binary/windows/%PROJNAME%/asset/table
 ::::::::::::::::::::::::生成脚本::::::::::::::::::::::::
-xcopy /R /Y resource\script\client\*.* %SLNAME%\binary\windows\%PROJNAME%\asset\lua\
+xcopy /R /Y resource\script\%PROJNAME%\*.* %SLNAME%\binary\windows\%PROJNAME%\asset\lua\platform\
+xcopy /R /Y /S resource\script\common\*.* %SLNAME%\binary\windows\%PROJNAME%\asset\lua\common\
+echo %PROJNAME%
+if %PROJNAME% == client (
+	echo "hello world"
+	xcopy /R /Y /S resource\gameui\* %SLNAME%\binary\windows\%PROJNAME%\asset\ui\
+)
 ::::::::::::::::::::::::生成完成::::::::::::::::::::::::
 @echo on

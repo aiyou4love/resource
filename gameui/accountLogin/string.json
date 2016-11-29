@@ -1,0 +1,6 @@
+[{"key":"inputName","value":"输入用户名"}
+,{"key":"inputPwd","value":"输入密码"}
+,{"key":"login","value":"执行登陆"}
+,{"key":"register","value":"显示注册界面"}
+,{"key":"accountName","value":"用户名:"}
+,{"key":"password","value":"密码:"}]
