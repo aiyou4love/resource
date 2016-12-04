@@ -21,9 +21,11 @@ set( sources Engine.cpp
 	aspect/select/Selector.cpp
 	aspect/aspect/AspectEngine.cpp
 	aspect/aspect/IAspect.cpp
-	aspect/trigger/IEngine.cpp
-	aspect/trigger/Sink.cpp
-	aspect/trigger/SinkMgr.cpp
+	aspect/engine/IEngine.cpp
+	aspect/engine/EngineMgr.cpp
+	aspect/sink/Sink.cpp
+	aspect/sink/SinkMgr.cpp
+	aspect/sink/SinkEntity.cpp
 	aspect/trigger/Trigger.cpp
 	handle/Context.cpp
 	handle/IContextClone.cpp
@@ -99,9 +101,12 @@ SET( headers Engine.hpp
 	aspect/select/Selector.hpp
 	aspect/aspect/AspectEngine.hpp
 	aspect/aspect/IAspect.hpp
-	aspect/trigger/IEngine.hpp
-	aspect/trigger/Sink.hpp
-	aspect/trigger/SinkMgr.hpp
+	aspect/engine/Eengine.hpp
+	aspect/engine/IEngine.hpp
+	aspect/engine/EngineMgr.hpp
+	aspect/sink/Sink.hpp
+	aspect/sink/SinkMgr.hpp
+	aspect/sink/SinkEntity.hpp
 	aspect/trigger/Trigger.hpp
 	aspect/doing/EdoingType.hpp
 	handle/Context.hpp
