@@ -13,8 +13,6 @@ set( sources System.cpp
 	ui/console/ConsoleItem.cpp
 	ui/console/ConsoleUi.cpp
 	ui/console/ConsoleEngine.cpp
-	server/ServerItem.cpp
-	server/ServerEngine.cpp
 	time/time/TimeAdjust.cpp
 	time/time/TimeBegin.cpp
 	time/time/TimeCount.cpp
@@ -35,20 +33,7 @@ set( sources System.cpp
 	task/server/cTaskConfig.cpp
 	task/engine/TaskEngine.cpp
 	activity/ActivityConfig.cpp
-	activity/ActivityEngine.cpp
-	role/role/RoleItem.cpp
-	role/client/RoleEngine.cpp
-	role/client/cRoleListResult.cpp
-	account/account/Account.cpp
-	account/account/AccountEngine.cpp
-	account/agent/cAccount.cpp
-	account/agent/cAccountEngine.cpp
-	account/social/cAccount.cpp
-	account/social/cAccountEngine.cpp
-	account/client/cAccount.cpp
-	account/client/cRoleResult.cpp
-	account/client/cLoginResult.cpp
-	account/client/cAccountEngine.cpp)
+	activity/ActivityEngine.cpp)
 	
 SET( headers System.hpp
 	ui/manager/IUiEngine.hpp
@@ -62,8 +47,6 @@ SET( headers System.hpp
 	ui/console/ConsoleItem.hpp
 	ui/console/ConsoleUi.hpp
 	ui/console/ConsoleEngine.hpp
-	server/ServerItem.hpp
-	server/ServerEngine.hpp
 	time/time/EtimeBegin.hpp
 	time/time/EtimeCount.hpp
 	time/time/EtimeEnd.hpp
@@ -92,21 +75,7 @@ SET( headers System.hpp
 	task/server/cTaskConfig.hpp
 	task/engine/TaskEngine.hpp
 	activity/ActivityConfig.hpp
-	activity/ActivityEngine.hpp
-	role/role/RoleItem.hpp
-	role/client/RoleEngine.hpp
-	role/client/cRoleListResult.hpp
-	account/account/Account.hpp
-	account/account/AccountEngine.hpp
-	account/agent/cAccount.hpp
-	account/agent/cAccountEngine.hpp
-	account/social/cAccount.hpp
-	account/social/cAccountEngine.hpp
-	account/client/EaccountId.hpp
-	account/client/cAccount.hpp
-	account/client/cRoleResult.hpp
-	account/client/cLoginResult.hpp
-	account/client/cAccountEngine.hpp)
+	activity/ActivityEngine.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})

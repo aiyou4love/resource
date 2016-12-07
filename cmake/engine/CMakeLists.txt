@@ -46,8 +46,6 @@ set( sources Engine.cpp
 	url/url/UrlMgr.cpp
 	upint/Upint.cpp
 	upint/UpintEngine.cpp
-	net/netIp/NetInfo.cpp
-	net/netIp/NetNo.cpp
 	net/netIp/NetIp.cpp
 	net/netIp/NetIpMgr.cpp
 	net/ioservice/IoService.cpp
@@ -130,8 +128,6 @@ SET( headers Engine.hpp
 	url/url/UrlMgr.hpp
 	upint/Upint.hpp
 	upint/UpintEngine.hpp
-	net/netIp/NetInfo.hpp
-	net/netIp/NetNo.hpp
 	net/netIp/NetIp.hpp
 	net/netIp/NetIpMgr.hpp
 	net/ioservice/IoService.hpp
