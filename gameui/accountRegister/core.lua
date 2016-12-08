@@ -30,5 +30,5 @@ function runRegister()
 end
 
 function closeUi()
-	mUiHandle:insertClose()
+	mUiHandle:pushClose()
 end
