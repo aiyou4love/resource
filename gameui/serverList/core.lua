@@ -26,7 +26,7 @@ end
 function onServerId()
 	local errorCode_ = setServerId()
 	if 1 == errorCode_ then
-		mUiHandle:insertClose()
+		mUiHandle:pushClose()
 	endif
 end
 

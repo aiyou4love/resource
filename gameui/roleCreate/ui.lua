@@ -23,6 +23,6 @@ end
 function onRoleCreate()
 	local errorCode_ = runRoleCreate()
 	if 1 == errorCode_ then
-		mUiHandle:insertClose()
+		mUiHandle:pushClose()
 	end
 end

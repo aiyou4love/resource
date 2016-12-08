@@ -31,7 +31,7 @@ end
 
 function onCancel()
 	runAccountReward(value_, 7)
-	mUiHandle:insertClose()
+	mUiHandle:pushClose()
 end
 
 function showCreateUi()

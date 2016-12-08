@@ -19,6 +19,10 @@ function showRegisterUi()
 	quickAccountReward(4)
 end
 
+function showLoginUi()
+	quickAccountReward(3)
+end
+
 function runLogin()
 	local valueMgr_ = ValueMgr.instance()
 	local value_ = valueMgr_:createValue()

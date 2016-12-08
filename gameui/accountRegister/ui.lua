@@ -23,6 +23,6 @@ end
 function onRegister()
 	local errorCode_ = runRegister()
 	if 1 == errorCode_ then
-		mUiHandle:insertClose()
+		mUiHandle:pushClose()
 	end
 end
