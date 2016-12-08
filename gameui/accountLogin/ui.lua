@@ -7,6 +7,7 @@ end
 
 function runShow()
 	if "" ~= mAccountName then
+		print("\n")
 		mUiHandle:printText("accountName")
 		print(mAccountName)
 	end
