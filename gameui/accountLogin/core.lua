@@ -19,8 +19,8 @@ function showRegisterUi()
 	quickAccountReward(4)
 end
 
-function showLoginUi()
-	quickAccountReward(3)
+function showEnterUi()
+	quickAccountReward(2)
 end
 
 function runLogin()

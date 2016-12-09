@@ -1,2 +1,3 @@
-[{"index":"1","type":"1","name":"enter","method":"onEnter"}
-,{"index":"2","type":"1","name":"cancel","method":"onCancel"}]
+[{"index":"1","type":"1","name":"serverList","method":"onServerList"}
+,{"index":"2","type":"1","name":"enter","method":"onEnter"}
+,{"index":"3","type":"1","name":"cancel","method":"onCancel"}]

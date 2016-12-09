@@ -2,4 +2,5 @@
 ,{"key":"serverId","value":"服务器编号:"}
 ,{"key":"serverName","value":"服务器名称:"}
 ,{"key":"accountName","value":"用户名:"}
-,{"key":"cancel","value":"注销帐号"}]
+,{"key":"cancel","value":"注销帐号"}
+,{"key":"serverList","value":"选择服务器"}]

@@ -19,7 +19,12 @@ set( sources Aspect.cpp
 	account/account/AccountReward.cpp
 	account/client/cAccountAspect.cpp
 	account/agent/cAccountAspect.cpp
-	account/social/cAccountAspect.cpp)
+	account/social/cAccountAspect.cpp
+	server/server/ServerAspect.cpp
+	server/server/ServerCondition.cpp
+	server/server/ServerReward.cpp
+	server/client/cServerAspect.cpp
+	server/agent/cServerAspect.cpp)
 	
 SET( headers Aspect.hpp
 	plugin/Plugin.hpp
@@ -39,7 +44,12 @@ SET( headers Aspect.hpp
 	account/account/AccountReward.hpp
 	account/client/cAccountAspect.hpp
 	account/agent/cAccountAspect.hpp
-	account/social/cAccountAspect.hpp)
+	account/social/cAccountAspect.hpp
+	server/server/ServerAspect.hpp
+	server/server/ServerCondition.hpp
+	server/server/ServerReward.hpp
+	server/client/cServerAspect.hpp
+	server/agent/cServerAspect.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})

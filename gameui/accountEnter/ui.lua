@@ -8,6 +8,7 @@ end
 
 function runShow()
 	if 0 ~= mServerId then
+		print("\n")
 		mUiHandle:printText("serverId")
 		print(mServerId)
 	end
@@ -31,3 +32,7 @@ function onEnter()
 		showCreateUi()
 	end
 end
+
+function onServerList()
+end
+

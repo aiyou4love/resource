@@ -16,12 +16,10 @@ function initValue()
 	
 	runAccountReward(value_, 7)
 	
-	local strValue_ = rawValue_:getString(1)
-	local cEnterValue = assert(load(strValue_))();
-	mRoleId = cEnterValue.mRoleId
-	mServerId = cEnterValue.mServerId
-	mServerName = cEnterValue.mServerName
-	mAccountName = cEnterValue.mAccountName
+	mAccountName = rawValue_:getString(1)
+	mRoleId = rawValue_:getInt32(2)
+	mServerId = rawValue_:getInt32(3)
+	mServerName = rawValue_:getString(4)
 	
 	valueMgr_:deleteValue(value_)
 end
@@ -30,10 +28,18 @@ function runEnter()
 end
 
 function onCancel()
-	runAccountReward(value_, 7)
+	quickAccountReward(11)
+	
 	mUiHandle:pushClose()
+	
+	mAccountName = ""
+	mRoleId = 0
+	mServerId = 0
+	mServerName = ""
+	
+	quickAccountReward(3)
 end
 
 function showCreateUi()
-	quickAccountReward(value_, 8)
+	quickAccountReward(8)
 end
