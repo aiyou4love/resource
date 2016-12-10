@@ -3,4 +3,6 @@
 ,{"key":"register","value":"执行注册"}
 ,{"key":"close","value":"关闭注册界面"}
 ,{"key":"accountName","value":"用户名:"}
-,{"key":"password","value":"密码:"}]
+,{"key":"password","value":"密码:"}
+,{"key":"fail","value":"用户注册失败"}
+,{"key":"system","value":"对不起!我们的游戏发生异常,给您带来了不便,我们正在努力修复中!"}]
