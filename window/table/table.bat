@@ -44,9 +44,7 @@ resource\tools\command\consoleui.exe -t resource/gameTb/%PROJNAME%/table %SLNAME
 ::::::::::::::::::::::::生成脚本::::::::::::::::::::::::
 xcopy /R /Y resource\script\%PROJNAME%\*.* %SLNAME%\binary\windows\%PROJNAME%\asset\lua\platform\
 xcopy /R /Y /S resource\script\common\*.* %SLNAME%\binary\windows\%PROJNAME%\asset\lua\common\
-echo %PROJNAME%
 if %PROJNAME% == client (
-	echo "hello world"
 	xcopy /R /Y /S resource\gameui\* %SLNAME%\binary\windows\%PROJNAME%\asset\ui\
 )
 ::::::::::::::::::::::::生成完成::::::::::::::::::::::::

@@ -6,7 +6,6 @@ function showText()
 end
 
 function runShow()
-	print("")
 	if "" ~= mAccountName then
 		mUiHandle:printText("accountName")
 		print(mAccountName)
@@ -15,7 +14,6 @@ function runShow()
 		mUiHandle:printText("password")
 		print(mPassword)
 	end
-	print("")
 end
 
 function runClose()
@@ -26,12 +24,8 @@ function onRegister()
 	if 1 == errorCode_ then
 		mUiHandle:pushClose()
 	elseif 2 == errorCode_ then
-		print("\n")
 		mUiHandle:printText("fail")
-		print("\n")
 	else
-		print("\n")
 		mUiHandle:printText("system")
-		print("\n")
 	end
 end

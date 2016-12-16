@@ -6,6 +6,7 @@ set( sources Engine.cpp
 	aspect/value/Buffer.cpp
 	aspect/value/Value.cpp
 	aspect/value/IndexValue.cpp
+	aspect/value/OrderValue.cpp
 	aspect/value/PacketMgr.cpp
 	aspect/value/ValueMgr.cpp
 	aspect/condition/Condition.cpp
@@ -80,6 +81,7 @@ SET( headers Engine.hpp
 	aspect/value/Buffer.hpp
 	aspect/value/Value.hpp
 	aspect/value/IndexValue.hpp
+	aspect/value/OrderValue.hpp
 	aspect/value/PacketMgr.hpp
 	aspect/value/ValueMgr.hpp
 	aspect/condition/Condition.hpp

@@ -4,14 +4,18 @@ set( prefixs ${SRC_ROOT}/${PROJECT_NAME} )
 
 set( sources System.cpp
 	ui/manager/UiManager.cpp
+	ui/manager/UiName.cpp
 	ui/console/CommandArgs.cpp
 	ui/console/CommandBat.cpp
 	ui/console/ConsoleInput.cpp
-	ui/console/ConsoleUpdate.cpp
+	ui/console/ConsoleUiUpdate.cpp
+	ui/console/ConsoleGameUpdate.cpp
 	ui/console/ConsoleInputClone.cpp
-	ui/console/ConsoleUpdateClone.cpp
+	ui/console/ConsoleUiUpdateClone.cpp
+	ui/console/ConsoleGameUpdateClone.cpp
 	ui/console/ConsoleItem.cpp
 	ui/console/ConsoleUi.cpp
+	ui/console/ConsoleScene.cpp
 	ui/console/ConsoleEngine.cpp
 	time/time/TimeAdjust.cpp
 	time/time/TimeBegin.cpp
@@ -53,15 +57,21 @@ set( sources System.cpp
 	
 SET( headers System.hpp
 	ui/manager/IUiEngine.hpp
+	ui/manager/EuiEngine.hpp
+	ui/manager/EuiType.hpp
+	ui/manager/UiName.hpp
 	ui/manager/UiManager.hpp
 	ui/console/CommandArgs.hpp
 	ui/console/CommandBat.hpp
 	ui/console/ConsoleInput.hpp
-	ui/console/ConsoleUpdate.hpp
+	ui/console/ConsoleUiUpdate.hpp
+	ui/console/ConsoleGameUpdate.hpp
 	ui/console/ConsoleInputClone.hpp
-	ui/console/ConsoleUpdateClone.hpp
+	ui/console/ConsoleUiUpdateClone.hpp
+	ui/console/ConsoleGameUpdateClone.hpp
 	ui/console/ConsoleItem.hpp
 	ui/console/ConsoleUi.hpp
+	ui/console/ConsoleScene.hpp
 	ui/console/ConsoleEngine.hpp
 	time/time/EtimeBegin.hpp
 	time/time/EtimeCount.hpp
