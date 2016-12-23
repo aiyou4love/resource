@@ -58,7 +58,7 @@ set( sources System.cpp
 SET( headers System.hpp
 	ui/manager/IUiEngine.hpp
 	ui/manager/EuiEngine.hpp
-	ui/manager/EuiType.hpp
+	ui/manager/EuiScene.hpp
 	ui/manager/UiName.hpp
 	ui/manager/UiManager.hpp
 	ui/console/CommandArgs.hpp
