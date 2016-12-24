@@ -4,4 +4,5 @@
 ,{"key":"command1","value":"* 示例1: 6:) 输入用户名                                       *\n"}
 ,{"key":"command2","value":"*     命令: -u 6 zyh  说明: 6为选项6 zyh为输入的用户名        *\n"}
 ,{"key":"command3","value":"* 示例2: 7:) 确定                                             *\n"}
-,{"key":"command4","value":"*     命令: -u 7      说明: 7为选项7 代表用户点击了确定       *\n"}]
+,{"key":"command4","value":"*     命令: -u 7      说明: 7为选项7 代表用户点击了确定       *\n"}
+,{"key":"command5","value":"*                       Ctrl+C退出应用                        *\n"}]

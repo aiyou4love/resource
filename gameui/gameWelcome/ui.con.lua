@@ -10,6 +10,7 @@ function showText()
 	mUiHandle:printText("command2")
 	mUiHandle:printText("command3")
 	mUiHandle:printText("command4")
+	mUiHandle:printText("command5")
 	mUiHandle:printText("header00")
 end
 

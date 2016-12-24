@@ -7,9 +7,12 @@ end
 
 function runShow()
 	mUiHandle:printText("header00")
+	mUiHandle:printText("welcome0")
+	mUiHandle:printText("command0")
+	mUiHandle:printText("header00")
 end
 
-local mTick = 10
+local mTick = 3
 function runTick()
 	if mTick >= 0 then
 		mTick = mTick - 1
@@ -17,8 +20,12 @@ function runTick()
 end
 
 function showTick()
-	if mTick >= 0 then
-		print(mTick)
+	if mTick > 0 then
+		mUiHandle:coutInt(mTick)
+		mUiHandle:coutText(" ")
+	elseif mTick == 0 then
+		mUiHandle:coutInt(mTick)
+		mUiHandle:coutText("\n")
 	else
 	end
 end

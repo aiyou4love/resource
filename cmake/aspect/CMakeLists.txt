@@ -7,6 +7,8 @@ set( sources Aspect.cpp
 	lua/LuaCondition.cpp
 	lua/LuaReward.cpp
 	lua/LuaAspect.cpp
+	app/AppReward.cpp
+	app/AppAspect.cpp
 	ui/UiAspect.cpp
 	ui/UiReward.cpp
 	role/role/RoleAspect.cpp
@@ -32,6 +34,8 @@ SET( headers Aspect.hpp
 	lua/LuaCondition.hpp
 	lua/LuaReward.hpp
 	lua/LuaAspect.hpp
+	app/AppReward.hpp
+	app/AppAspect.hpp
 	ui/UiAspect.hpp
 	ui/UiReward.hpp
 	role/role/RoleAspect.hpp
