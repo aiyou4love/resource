@@ -9,10 +9,12 @@ mPassword=""
 
 function setAccountName(nValue)
 	mAccountName = nValue
+	quickAccountReward(7)
 end
 
 function setPassword(nValue)
 	mPassword = nValue
+	quickAccountReward(7)
 end
 
 function runRegister()
@@ -22,7 +24,7 @@ function runRegister()
 	
 	rawValue_:pushString(mAccountName)
 	rawValue_:pushString(mPassword)
-	runAccountReward(value_, 5)
+	runAccountReward(value_, 10)
 	
 	local errorCode_ = rawValue_:getInt8(3);
 	valueMgr_:deleteValue(value_)
@@ -30,5 +32,5 @@ function runRegister()
 end
 
 function closeUi()
-	mUiHandle:pushClose()
+	quickAccountReward(9)
 end

@@ -22,6 +22,12 @@ function runShow()
 	end
 end
 
+function runTick()
+end
+
+function showTick()
+end
+
 function runClose()
 end
 

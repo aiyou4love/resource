@@ -9,14 +9,16 @@ mPassword=""
 
 function setAccountName(nValue)
 	mAccountName = nValue
+	quickAccountReward(7)
 end
 
 function setPassword(nValue)
 	mPassword = nValue
+	quickAccountReward(7)
 end
 
 function showRegisterUi()
-	quickAccountReward(4)
+	quickAccountReward(8)
 end
 
 function showEnterUi()

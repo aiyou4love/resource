@@ -27,6 +27,7 @@ function showTick()
 		mUiHandle:coutInt(mTick)
 		mUiHandle:coutText("\n")
 	else
+		quickAccountIfSelect(3)
 	end
 end
 

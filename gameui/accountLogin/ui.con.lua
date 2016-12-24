@@ -7,7 +7,6 @@ end
 
 function runShow()
 	if "" ~= mAccountName then
-		print("\n")
 		mUiHandle:printText("accountName")
 		print(mAccountName)
 	end
@@ -15,6 +14,12 @@ function runShow()
 		mUiHandle:printText("password")
 		print(mPassword)
 	end
+end
+
+function runTick()
+end
+
+function showTick()
 end
 
 function runClose()

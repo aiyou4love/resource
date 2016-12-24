@@ -16,13 +16,19 @@ function runShow()
 	end
 end
 
+function runTick()
+end
+
+function showTick()
+end
+
 function runClose()
 end
 
 function onRegister()
 	local errorCode_ = runRegister()
 	if 1 == errorCode_ then
-		mUiHandle:pushClose()
+		closeUi()
 	elseif 2 == errorCode_ then
 		mUiHandle:printText("fail")
 	else
