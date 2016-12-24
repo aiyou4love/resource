@@ -4,5 +4,5 @@
 ,{"key":"command1","value":"*                                                            *\n"}
 ,{"key":"command2","value":"*                        再见！                              *\n"}
 ,{"key":"command3","value":"*        倒计时结束前输入括号中命令(-u 1)返回游戏            *\n"}
-,{"key":"command4","value":"*            倒计时结束后按回车键退出应用！                  *\n"}
+,{"key":"command4","value":"*           倒计时结束后按两下回车键退出应用！               *\n"}
 ,{"key":"return","value":"返回游戏"}]
