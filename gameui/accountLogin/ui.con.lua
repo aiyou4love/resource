@@ -28,7 +28,6 @@ end
 function onLogin()
 	local errorCode_ = runLogin()
 	if 1 == errorCode_ then
-		mUiHandle:pushClose()
 		showEnterUi()
 	end
 end

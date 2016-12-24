@@ -8,7 +8,6 @@ end
 
 function runShow()
 	if 0 ~= mServerId then
-		print("\n")
 		mUiHandle:printText("serverId")
 		print(mServerId)
 	end

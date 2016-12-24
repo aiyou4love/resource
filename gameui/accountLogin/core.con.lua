@@ -22,7 +22,7 @@ function showRegisterUi()
 end
 
 function showEnterUi()
-	quickAccountReward(2)
+	quickAccountReward(11)
 end
 
 function runLogin()
@@ -33,7 +33,7 @@ function runLogin()
 	rawValue_:pushString(mAccountName)
 	rawValue_:pushString(mPassword)
 	rawValue_:pushInt16(1)
-	runAccountReward(value_, 6)
+	runAccountReward(value_, 12)
 	
 	local errorCode_ = rawValue_:getInt8(4)
 	valueMgr_:deleteValue(value_)
