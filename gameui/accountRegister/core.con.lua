@@ -8,10 +8,6 @@ function setHandle(nUiHandle)
 	mUiHandle = nUiHandle
 end
 
-function refreshUi()
-	quickAccountReward(7)
-end
-
 mAccountName=""
 mPassword=""
 
@@ -30,7 +26,7 @@ function runRegister()
 	
 	rawValue_:pushString(mAccountName)
 	rawValue_:pushString(mPassword)
-	runAccountReward(value_, 10)
+	runAccountReward(value_, 12)
 	
 	local errorCode_ = rawValue_:getInt8(3);
 	valueMgr_:deleteValue(value_)

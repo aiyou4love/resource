@@ -4,16 +4,12 @@
 
 function onAccountName(nValue)
 	setAccountName(nValue)
-	refreshUi()
+	refreshUiScene()
 end
 
 function onPassword(nValue)
 	setPassword(nValue)
-	refreshUi()
-end
-
-function onCloseUi()
-	quickAccountReward(9)
+	refreshUiScene()
 end
 
 function onRegister()
@@ -25,4 +21,8 @@ function onRegister()
 	else
 		mUiHandle:printText("system")
 	end
+end
+
+function onCloseUi()
+	quickAccountReward(11)
 end

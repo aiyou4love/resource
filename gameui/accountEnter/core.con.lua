@@ -17,7 +17,7 @@ function initValue()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	runAccountReward(value_, 13)
+	runAccountReward(value_, 15)
 	
 	mAccountName = rawValue_:getString(1)
 	mRoleId = rawValue_:getInt32(2)
@@ -28,19 +28,6 @@ function initValue()
 end
 
 function runEnter()
-end
-
-function onCancel()
-	quickAccountReward(11)
-	
-	mUiHandle:pushClose()
-	
-	mAccountName = ""
-	mRoleId = 0
-	mServerId = 0
-	mServerName = ""
-	
-	quickAccountReward(3)
 end
 
 function showCreateUi()

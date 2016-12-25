@@ -40,7 +40,7 @@ function showTick()
 		mUiHandle:coutInt(mTick)
 		mUiHandle:coutText("\n")
 	else
-		quickAccountReward(3)
+		quickAccountReward(5)
 	end
 end
 

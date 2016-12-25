@@ -2,5 +2,5 @@
 --       放置按钮和输入框响应事件            --
 -----------------------------------------------
 function onReturnGame()
-	quickAccountReward(4)
+	quickAccountReward(6)
 end

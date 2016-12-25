@@ -15,11 +15,13 @@ end
 function runShow()
 	if "" ~= mAccountName then
 		mUiHandle:printText("accountName")
-		print(mAccountName)
+		mUiHandle:coutText(mAccountName)
+		mUiHandle:coutText("\n")
 	end
 	if "" ~= mPassword then
 		mUiHandle:printText("password")
-		print(mPassword)
+		mUiHandle:coutText(mPassword)
+		mUiHandle:coutText("\n")
 	end
 end
 

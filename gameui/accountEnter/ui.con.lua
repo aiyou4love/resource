@@ -16,15 +16,18 @@ end
 function runShow()
 	if 0 ~= mServerId then
 		mUiHandle:printText("serverId")
-		print(mServerId)
+		mUiHandle:coutInt(mServerId)
+		mUiHandle:coutText("\n")
 	end
 	if "" ~= mServerName then
 		mUiHandle:printText("serverName")
-		print(mServerName)
+		mUiHandle:coutText(mServerName)
+		mUiHandle:coutText("\n")
 	end
 	if "" ~= mAccountName then
 		mUiHandle:printText("accountName")
-		print(mAccountName)
+		mUiHandle:coutText(mAccountName)
+		mUiHandle:coutText("\n")
 	end
 end
 
@@ -39,15 +42,3 @@ end
 --窗口关闭事件
 function runClose()
 end
-
-function onEnter()
-	if mRoleId > 0 then
-		runEnter()
-	else
-		showCreateUi()
-	end
-end
-
-function onServerList()
-end
-
