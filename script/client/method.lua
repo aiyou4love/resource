@@ -33,3 +33,12 @@ function quickAccountIfSelect(nSelectId)
 	
 	valueMgr_:deleteValue(value_)
 end
+
+function refreshMainScene()
+	quickAccountReward(7)
+end
+
+function refreshGameScene()
+	quickAccountReward(7)
+end
+

@@ -1,4 +1,4 @@
-[{"index":"1","type":"2","name":"inputName","method":"setAccountName"}
-,{"index":"2","type":"2","name":"inputPwd","method":"setPassword"}
+[{"index":"1","type":"2","name":"inputName","method":"onAccountName"}
+,{"index":"2","type":"2","name":"inputPwd","method":"onPassword"}
 ,{"index":"3","type":"1","name":"login","method":"onLogin"}
-,{"index":"4","type":"1","name":"register","method":"showRegisterUi"}]
+,{"index":"4","type":"1","name":"register","method":"onShowUi"}]

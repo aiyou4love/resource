@@ -1,7 +1,15 @@
+-----------------------------------------------
+--            放置界面核心逻辑               --
+-----------------------------------------------
+
 mUiHandle = nil
 
 function setHandle(nUiHandle)
 	mUiHandle = nUiHandle
+end
+
+function refreshUi()
+	quickAccountReward(7)
 end
 
 mAccountName=""
@@ -9,12 +17,10 @@ mPassword=""
 
 function setAccountName(nValue)
 	mAccountName = nValue
-	quickAccountReward(7)
 end
 
 function setPassword(nValue)
 	mPassword = nValue
-	quickAccountReward(7)
 end
 
 function runRegister()
@@ -29,8 +35,4 @@ function runRegister()
 	local errorCode_ = rawValue_:getInt8(3);
 	valueMgr_:deleteValue(value_)
 	return errorCode_
-end
-
-function closeUi()
-	quickAccountReward(9)
 end
