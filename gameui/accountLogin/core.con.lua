@@ -19,7 +19,7 @@ function setPassword(nValue)
 end
 
 function showEnterUi()
-	quickAccountReward(13)
+	quickAccountReward(9)
 end
 
 function runLogin()
@@ -30,7 +30,7 @@ function runLogin()
 	rawValue_:pushString(mAccountName)
 	rawValue_:pushString(mPassword)
 	rawValue_:pushInt16(1)
-	runAccountReward(value_, 14)
+	runAccountReward(value_, 13)
 	
 	local errorCode_ = rawValue_:getInt8(4)
 	valueMgr_:deleteValue(value_)

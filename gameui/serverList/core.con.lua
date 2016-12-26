@@ -18,7 +18,7 @@ function SelectServerId()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
 	rawValue_:pushInt32(mServerId)
-	runAccountReward(value_, 21)
+	runAccountReward(value_, 20)
 	
 	valueMgr_:deleteValue(value_)
 end
@@ -29,7 +29,7 @@ function getRoleList()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	runAccountReward(value_, 20)
+	runAccountReward(value_, 19)
 	
 	local roleStr_ = rawValue_:getString(1)
 	mRoleList = assert(load(roleStr_))()
@@ -43,7 +43,7 @@ function getServerList()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	runAccountReward(value_, 19)
+	runAccountReward(value_, 18)
 	
 	local serverStr_ = rawValue_:getString(1)
 	mServerList = assert(load(serverStr_))()
@@ -56,7 +56,7 @@ function requestRoleList()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	runAccountReward(value_, 18)
+	runAccountReward(value_, 17)
 	
 	mErrorCode = rawValue_:getInt8(2)
 	

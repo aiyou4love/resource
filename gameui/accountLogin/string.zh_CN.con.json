@@ -3,4 +3,6 @@
 ,{"key":"login","value":"执行登陆"}
 ,{"key":"register","value":"显示注册界面"}
 ,{"key":"accountName","value":"用户名:"}
-,{"key":"password","value":"密码:"}]
+,{"key":"password","value":"密码:"}
+,{"key":"accountexist","value":"登陆失败,帐号不存在"}
+,{"key":"error","value":"应用异常,请联系客服"}]

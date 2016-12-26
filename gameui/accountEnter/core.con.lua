@@ -17,7 +17,7 @@ function initValue()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	runAccountReward(value_, 15)
+	runAccountReward(value_, 14)
 	
 	mAccountName = rawValue_:getString(1)
 	mRoleId = rawValue_:getInt32(2)
@@ -27,9 +27,11 @@ function initValue()
 	valueMgr_:deleteValue(value_)
 end
 
-function runEnter()
+function showNetConnect()
+	print("showNetConnect")
+	quickAccountReward(23)
 end
 
 function showCreateUi()
-	quickAccountReward(8)
+	quickAccountReward(21)
 end

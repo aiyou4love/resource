@@ -16,6 +16,12 @@ function onLogin()
 	local errorCode_ = runLogin()
 	if 1 == errorCode_ then
 		showEnterUi()
+	elseif 2 == errorCode_ then
+		mUiHandle:printText("accountexist")
+		mUiHandle:coutText("\n")
+	else
+		mUiHandle:printText("error")
+		mUiHandle:coutText("\n")
 	end
 end
 

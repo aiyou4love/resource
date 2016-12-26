@@ -25,10 +25,14 @@ function runRoleCreate()
 	
 	rawValue_:pushString(mRoleName)
 	rawValue_:pushInt16(mRoleRace)
-	runAccountReward(value_, 9)
+	runAccountReward(value_, 22)
 	
-	local errorCode_ = rawValue_:getInt8(4)
+	local errorCode_ = rawValue_:getInt8(2)
 	
 	valueMgr_:deleteValue(value_)
 	return errorCode_
+end
+
+function showNetConnect()
+	quickAccountReward(23)
 end

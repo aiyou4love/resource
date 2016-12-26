@@ -15,12 +15,15 @@ end
 function runShow()
 	if "" ~= mRoleName then
 		mUiHandle:printText("roleName")
-		print(mRoleName)
+		mUiHandle:coutText(mRoleName)
+		mUiHandle:coutText("\n")
 	end
-	if "1" == mRoleRace then
+	if 1 == mRoleRace then
 		mUiHandle:printText("select1")
-	elseif "2" == mRoleRace then
+		mUiHandle:coutText("\n")
+	elseif 2 == mRoleRace then
 		mUiHandle:printText("select2")
+		mUiHandle:coutText("\n")
 	end
 end
 
@@ -34,11 +37,4 @@ end
 
 --窗口关闭事件
 function runClose()
-end
-
-function onRoleCreate()
-	local errorCode_ = runRoleCreate()
-	if 1 == errorCode_ then
-		mUiHandle:pushClose()
-	end
 end

@@ -4,18 +4,18 @@
 
 function onEnter()
 	if mRoleId > 0 then
-		runEnter()
+		showNetConnect()
 	else
 		showCreateUi()
 	end
 end
 
 function onServerList()
-	quickAccountReward(17)
+	quickAccountReward(16)
 end
 
 function onCancel()
-	quickAccountReward(16)
+	quickAccountReward(15)
 	
 	mAccountName = ""
 	mRoleId = 0

@@ -11,5 +11,5 @@ function onSelectServer()
 end
 
 function onReturnEnterUi()
-	quickAccountReward(22)
+	quickAccountReward(9)
 end
