@@ -7,58 +7,58 @@ function setHandle(nUiHandle)
 	mUiHandle = nUiHandle
 end
 
-local mServerId = 0
-function inputServerId(nServerId)
+mServerId = 0
+function setServerId(nServerId)
 	mServerId = tonumber(nServerId)
 end
 
-function setServerId()
+function SelectServerId()
 	local valueMgr_ = ValueMgr.instance()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
 	rawValue_:pushInt32(mServerId)
-	runAccountReward(value_, 9)
-	
-	local errorCode_ = rawValue_:getInt8(2)
+	runAccountReward(value_, 21)
 	
 	valueMgr_:deleteValue(value_)
-	return errorCode_
-end
-
-function onServerId()
-	local errorCode_ = setServerId()
-	if 1 == errorCode_ then
-		mUiHandle:pushClose()
-	endif
 end
 
 mRoleList = {}
-function getRoleList(nPage)
+function getRoleList()
 	local valueMgr_ = ValueMgr.instance()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	rawValue_:pushInt16(nPage)
-	runAccountReward(value_, 9)
+	runAccountReward(value_, 20)
 	
-	local roleStr_ = rawValue_:getString(2)
-	mRoleList = assert(load(roleStr_))
+	local roleStr_ = rawValue_:getString(1)
+	mRoleList = assert(load(roleStr_))()
 	
 	valueMgr_:deleteValue(value_)
 end
 
 mServerList = {}
-function getServerList(nPage)
+function getServerList()
 	local valueMgr_ = ValueMgr.instance()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	rawValue_:pushInt16(nPage)
-	runAccountReward(value_, 9)
+	runAccountReward(value_, 19)
 	
-	local serverStr_ = rawValue_:getString(2)
-	mServerList = assert(load(serverStr_))
+	local serverStr_ = rawValue_:getString(1)
+	mServerList = assert(load(serverStr_))()
+	valueMgr_:deleteValue(value_)
+end
+
+mErrorCode = 0
+function requestRoleList()
+	local valueMgr_ = ValueMgr.instance()
+	local value_ = valueMgr_:createValue()
+	local rawValue_ = valueMgr_:getValue(value_)
+	
+	runAccountReward(value_, 18)
+	
+	mErrorCode = rawValue_:getInt8(2)
 	
 	valueMgr_:deleteValue(value_)
 end

@@ -11,6 +11,7 @@ function onEnter()
 end
 
 function onServerList()
+	quickAccountReward(17)
 end
 
 function onCancel()

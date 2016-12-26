@@ -1,2 +1,7 @@
 [{"key":"input","value":"输入选择的服务器"}
-,{"key":"set","value":"设置选择的服务器"}]
+,{"key":"select","value":"设置选择的服务器"}
+,{"key":"error","value":"请求服务器列表信息失败"}
+,{"key":"selectId","value":"当前选择的服务器编号:"}
+,{"key":"serverList","value":"服务器列表:\n"}
+,{"key":"server","value":"、"}
+,{"key":"return","value":"返回进入游戏界面"}]

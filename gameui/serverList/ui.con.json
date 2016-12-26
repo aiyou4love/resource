@@ -1,2 +1,3 @@
-[{"index":"1","type":"2","name":"input","method":"inputServerId"}
-,{"index":"2","type":"1","name":"set","method":"onServerId"}]
+[{"index":"1","type":"2","name":"input","method":"onInputServer"}
+,{"index":"2","type":"1","name":"select","method":"onSelectServer"}
+,{"index":"3","type":"1","name":"return","method":"onReturnEnterUi"}]
