@@ -27,7 +27,7 @@ function runRoleCreate()
 	rawValue_:pushInt16(mRoleRace)
 	runAccountReward(value_, 22)
 	
-	local errorCode_ = rawValue_:getInt8(2)
+	local errorCode_ = rawValue_:getInt8(3)
 	
 	valueMgr_:deleteValue(value_)
 	return errorCode_
