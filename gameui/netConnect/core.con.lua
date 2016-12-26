@@ -6,3 +6,7 @@ mUiHandle = nil
 function setHandle(nUiHandle)
 	mUiHandle = nUiHandle
 end
+
+mErrorCode = 0
+function getIdleAgent()
+end
