@@ -22,6 +22,11 @@ set( sources Aspect.cpp
 	account/client/cAccountAspect.cpp
 	account/agent/cAccountAspect.cpp
 	account/social/cAccountAspect.cpp
+	net/net/NetAspect.cpp
+	net/net/NetReward.cpp
+	net/client/cNetAspect.cpp
+	net/client/cAgentResult.cpp
+	net/agent/cNetAspect.cpp
 	server/server/ServerAspect.cpp
 	server/server/ServerCondition.cpp
 	server/server/ServerReward.cpp
@@ -49,6 +54,11 @@ SET( headers Aspect.hpp
 	account/client/cAccountAspect.hpp
 	account/agent/cAccountAspect.hpp
 	account/social/cAccountAspect.hpp
+	net/net/NetAspect.hpp
+	net/net/NetReward.hpp
+	net/client/cNetAspect.hpp
+	net/client/cAgentResult.hpp
+	net/agent/cNetAspect.hpp
 	server/server/ServerAspect.hpp
 	server/server/ServerCondition.hpp
 	server/server/ServerReward.hpp

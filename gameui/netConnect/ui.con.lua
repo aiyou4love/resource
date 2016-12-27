@@ -5,6 +5,7 @@
 --脚本初始化入口
 function runInit(nUiHandle)
 	setHandle(nUiHandle)
+	getIdleAgent()
 end
 
 --显示窗口标头 窗口是不是置顶都会显示
@@ -13,7 +14,15 @@ end
 
 --显示窗口正文 只有置顶窗口才会显示
 function runShow()
-	mUiHandle:printText("getIp")
+	if 0 == mErrorCode then
+		mUiHandle:printText("getIp")
+	elseif 1 == mErrorCode then
+		mUiHandle:printText("getIpError")
+	elseif 2 == mErrorCode then
+		mUiHandle:printText("connect")
+	elseif 3 == mErrorCode then
+		mUiHandle:printText("getIpFat")
+	end
 end
 
 --窗口定时1秒响应事件

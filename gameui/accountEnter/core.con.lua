@@ -28,7 +28,6 @@ function initValue()
 end
 
 function showNetConnect()
-	print("showNetConnect")
 	quickAccountReward(23)
 end
 
