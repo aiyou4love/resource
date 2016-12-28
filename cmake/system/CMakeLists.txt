@@ -43,7 +43,23 @@ set( sources System.cpp
 	server/client/ServerEngine.cpp
 	role/role/RoleItem.cpp
 	role/client/cRoleListResult.cpp
-	role/client/RoleEngine.cpp)
+	role/client/RoleEngine.cpp
+	application/Application.cpp
+	application/ApplicationUpdate.cpp
+	application/ApplicationUpdateClone.cpp
+	application/ApplicationEngine.cpp
+	account/account/Account.cpp
+	account/account/AccountEngine.cpp
+	account/account/AccountUpdate.cpp
+	account/account/AccountUpdateClone.cpp
+	account/agent/cAccount.cpp
+	account/agent/cAccountEngine.cpp
+	account/social/cAccount.cpp
+	account/social/cAccountEngine.cpp
+	account/client/cAccount.cpp
+	account/client/cRoleResult.cpp
+	account/client/cLoginResult.cpp
+	account/client/cAccountEngine.cpp)
 	
 SET( headers System.hpp
 	ui/manager/IUiEngine.hpp
@@ -97,7 +113,25 @@ SET( headers System.hpp
 	server/client/ServerEngine.hpp
 	role/role/RoleItem.hpp
 	role/client/cRoleListResult.hpp
-	role/client/RoleEngine.hpp)
+	role/client/RoleEngine.hpp
+	EdispatchId.hpp
+	application/Application.hpp
+	application/ApplicationUpdate.hpp
+	application/ApplicationUpdateClone.hpp
+	application/ApplicationEngine.hpp
+	account/account/Account.hpp
+	account/account/AccountEngine.hpp
+	account/account/AccountUpdate.hpp
+	account/account/AccountUpdateClone.hpp
+	account/agent/cAccount.hpp
+	account/agent/cAccountEngine.hpp
+	account/social/cAccount.hpp
+	account/social/cAccountEngine.hpp
+	account/client/EaccountId.hpp
+	account/client/cAccount.hpp
+	account/client/cRoleResult.hpp
+	account/client/cLoginResult.hpp
+	account/client/cAccountEngine.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})

@@ -34,7 +34,6 @@ add_subdirectory(library)
 add_subdirectory(serialize)
 add_subdirectory(engine)
 add_subdirectory(system)
-add_subdirectory(dispatch)
 add_subdirectory(aspect)
 add_subdirectory(autoup)
 ##############################################################
