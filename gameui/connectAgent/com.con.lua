@@ -9,3 +9,7 @@ end
 
 function inConnectTimeout()
 end
+
+function onReturnEnterUi()
+	quickAccountReward(10)
+end
