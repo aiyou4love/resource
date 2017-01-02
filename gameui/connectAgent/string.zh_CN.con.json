@@ -1,4 +1,7 @@
-[{"key":"connect","value":"正在连接服务器..."}
-,{"key":"getIp","value":"正在请求服务器地址..."}
-,{"key":"getIpError","value":"请求服务器地址失败,请检查网络"}
-,{"key":"return","value":"返回进入游戏界面"}]
+[{"key":"connect","value":"正在连接服务器...\n"}
+,{"key":"getIp","value":"正在请求服务器地址...\n"}
+,{"key":"getIpError","value":"请求服务器地址失败,请检查网络\n"}
+,{"key":"return","value":"返回进入游戏界面\n"}
+,{"key":"connectError","value":"连接接服务器出错，请检查网络\n"}
+,{"key":"connectSucess","value":"连接接服务器成功\n"}
+,{"key":"connectTimeout","value":"连接接服务器超时\n"}]

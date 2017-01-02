@@ -24,7 +24,7 @@ function getIdleAgent()
 	else
 		mErrorCode = 2
 	end
-	refreshUiScene()
+	--refreshUiScene()
 end
 
 function connectAgent()
