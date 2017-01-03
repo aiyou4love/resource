@@ -16,5 +16,5 @@ end
 --       放置按钮和输入框响应事件            --
 -----------------------------------------------
 function onReturnEnterUi()
-	quickAccountReward(10)
+	quickAccountReward(9)
 end

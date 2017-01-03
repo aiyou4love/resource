@@ -13,6 +13,10 @@ function setServerId(nServerId)
 end
 
 function SelectServerId()
+	if 0 == mServerId then
+		mUiHandle:printText("setServerId")
+		return
+	end
 	local valueMgr_ = ValueMgr.instance()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)

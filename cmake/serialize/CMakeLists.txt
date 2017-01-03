@@ -26,7 +26,8 @@ set( sources Serialize.cpp
 	time/LocalTime.cpp
 	lua/LuaWriter.cpp
 	lua/LuaThread.cpp
-	lua/LuaEngine.cpp)
+	lua/LuaEngine.cpp
+	dump/Dump.cpp)
 	
 SET( headers Serialize.hpp
 	normal/normal/CommonMethod.hpp
@@ -58,7 +59,8 @@ SET( headers Serialize.hpp
 	lua/LuaWriter.hpp
 	lua/LuaThread.hpp
 	lua/LuaEngine.hpp
-	plugin/IPlugin.hpp)
+	plugin/IPlugin.hpp
+	dump/Dump.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})

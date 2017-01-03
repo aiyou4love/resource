@@ -4,4 +4,5 @@
 ,{"key":"selectId","value":"当前选择的服务器编号:"}
 ,{"key":"serverList","value":"服务器列表:\n"}
 ,{"key":"server","value":"、"}
-,{"key":"return","value":"返回进入游戏界面"}]
+,{"key":"return","value":"返回进入游戏界面"}
+,{"key":"setServerId","value":"需要输入服务器编号\n"}]
