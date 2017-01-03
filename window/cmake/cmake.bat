@@ -20,6 +20,5 @@ cd %PROJNAME%
 ::::::::::::::::::::::::执行编译::::::::::::::::::::::::
 cmake %SLN_ROOT%/resource/cmake -G"Visual Studio 15 Win64" -D__SLNAME__=%SLNAME% -D__PROJNAME__=%PROJNAME%
 msbuild INSTALL.vcxproj /maxcpucount:4
-::::::::::::::::::::::::生成表格::::::::::::::::::::::::
 ::::::::::::::::::::::::编译完成::::::::::::::::::::::::
 @echo on
