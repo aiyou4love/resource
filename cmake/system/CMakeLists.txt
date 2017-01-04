@@ -41,6 +41,7 @@ set( sources System.cpp
 	server/info/ServerItem.cpp
 	server/info/ServerInfo.cpp
 	server/client/ServerEngine.cpp
+	server/server/ServerEngine.cpp
 	role/role/RoleItem.cpp
 	role/client/cRoleListResult.cpp
 	role/client/RoleEngine.cpp
@@ -111,6 +112,7 @@ SET( headers System.hpp
 	server/info/ServerItem.hpp
 	server/info/ServerInfo.hpp
 	server/client/ServerEngine.hpp
+	server/server/ServerEngine.hpp
 	role/role/RoleItem.hpp
 	role/client/cRoleListResult.hpp
 	role/client/RoleEngine.hpp
