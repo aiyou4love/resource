@@ -42,24 +42,30 @@ set( sources System.cpp
 	server/info/ServerInfo.cpp
 	server/client/ServerEngine.cpp
 	server/server/ServerEngine.cpp
-	role/role/RoleItem.cpp
+	role/role/Role.cpp
+	role/role/RoleEngine.cpp
+	role/role/RoleUpdate.cpp
+	role/role/RoleUpdateClone.cpp
+	role/agent/cRole.cpp
+	role/agent/cRoleEngine.cpp
+	role/client/cRole.cpp
+	role/client/cRoleEngine.cpp
+	role/client/cRoleList.cpp
 	role/client/cRoleListResult.cpp
-	role/client/RoleEngine.cpp
+	role/client/RoleItem.cpp
+	role/game/cRole.cpp
+	role/game/cRoleEngine.cpp
+	role/social/cRole.cpp
+	role/social/cRoleEngine.cpp
 	application/Application.cpp
 	application/ApplicationUpdate.cpp
 	application/ApplicationUpdateClone.cpp
 	application/ApplicationEngine.cpp
 	account/account/Account.cpp
 	account/account/AccountEngine.cpp
-	account/account/AccountUpdate.cpp
-	account/account/AccountUpdateClone.cpp
 	account/agent/cAccount.cpp
 	account/agent/cAccountEngine.cpp
-	account/social/cAccount.cpp
-	account/social/cAccountEngine.cpp
 	account/client/cAccount.cpp
-	account/client/cRoleResult.cpp
-	account/client/cLoginResult.cpp
 	account/client/cAccountEngine.cpp)
 	
 SET( headers System.hpp
@@ -113,9 +119,22 @@ SET( headers System.hpp
 	server/info/ServerInfo.hpp
 	server/client/ServerEngine.hpp
 	server/server/ServerEngine.hpp
-	role/role/RoleItem.hpp
+	role/role/Role.hpp
+	role/role/RoleEngine.hpp
+	role/role/RoleUpdate.hpp
+	role/role/RoleUpdateClone.hpp
+	role/agent/cRole.hpp
+	role/agent/cRoleEngine.hpp
+	role/client/cRole.hpp
+	role/client/cRoleEngine.hpp
+	role/client/cRoleList.hpp
 	role/client/cRoleListResult.hpp
-	role/client/RoleEngine.hpp
+	role/client/RoleItem.hpp
+	role/client/EroleId.hpp
+	role/game/cRole.hpp
+	role/game/cRoleEngine.hpp
+	role/social/cRole.hpp
+	role/social/cRoleEngine.hpp
 	EdispatchId.hpp
 	application/Application.hpp
 	application/ApplicationUpdate.hpp
@@ -123,16 +142,9 @@ SET( headers System.hpp
 	application/ApplicationEngine.hpp
 	account/account/Account.hpp
 	account/account/AccountEngine.hpp
-	account/account/AccountUpdate.hpp
-	account/account/AccountUpdateClone.hpp
 	account/agent/cAccount.hpp
 	account/agent/cAccountEngine.hpp
-	account/social/cAccount.hpp
-	account/social/cAccountEngine.hpp
-	account/client/EaccountId.hpp
 	account/client/cAccount.hpp
-	account/client/cRoleResult.hpp
-	account/client/cLoginResult.hpp
 	account/client/cAccountEngine.hpp)
 	
 foreach(src IN ITEMS ${sources})

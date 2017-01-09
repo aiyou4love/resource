@@ -16,22 +16,25 @@ set( sources Aspect.cpp
 	role/role/RoleReward.cpp
 	role/client/cRoleAspect.cpp
 	role/agent/cRoleAspect.cpp
+	role/game/cRoleAspect.cpp
+	role/social/cRoleAspect.cpp
 	account/account/AccountAspect.cpp
 	account/account/AccountCondition.cpp
 	account/account/AccountReward.cpp
 	account/client/cAccountAspect.cpp
 	account/agent/cAccountAspect.cpp
-	account/social/cAccountAspect.cpp
 	net/net/NetAspect.cpp
 	net/net/NetReward.cpp
 	net/client/cNetAspect.cpp
 	net/client/cAgentResult.cpp
 	net/agent/cNetAspect.cpp
-	server/server/ServerAspect.cpp
-	server/server/ServerCondition.cpp
-	server/server/ServerReward.cpp
+	net/game/cNetAspect.cpp
+	net/social/cNetAspect.cpp
+	server/common/ServerAspect.cpp
+	server/common/ServerCondition.cpp
+	server/common/ServerReward.cpp
 	server/client/cServerAspect.cpp
-	server/agent/cServerAspect.cpp)
+	server/server/cServerAspect.cpp)
 	
 SET( headers Aspect.hpp
 	plugin/Plugin.hpp
@@ -48,22 +51,25 @@ SET( headers Aspect.hpp
 	role/role/RoleReward.hpp
 	role/client/cRoleAspect.hpp
 	role/agent/cRoleAspect.hpp
+	role/game/cRoleAspect.hpp
+	role/social/cRoleAspect.hpp
 	account/account/AccountAspect.hpp
 	account/account/AccountCondition.hpp
 	account/account/AccountReward.hpp
 	account/client/cAccountAspect.hpp
 	account/agent/cAccountAspect.hpp
-	account/social/cAccountAspect.hpp
 	net/net/NetAspect.hpp
 	net/net/NetReward.hpp
 	net/client/cNetAspect.hpp
 	net/client/cAgentResult.hpp
 	net/agent/cNetAspect.hpp
-	server/server/ServerAspect.hpp
-	server/server/ServerCondition.hpp
-	server/server/ServerReward.hpp
+	net/game/cNetAspect.hpp
+	net/social/cNetAspect.hpp
+	server/common/ServerAspect.hpp
+	server/common/ServerCondition.hpp
+	server/common/ServerReward.hpp
 	server/client/cServerAspect.hpp
-	server/agent/cServerAspect.hpp)
+	server/server/cServerAspect.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})
