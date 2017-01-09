@@ -65,6 +65,8 @@ set( sources System.cpp
 	account/account/AccountEngine.cpp
 	account/agent/cAccount.cpp
 	account/agent/cAccountEngine.cpp
+	account/client/cLoginResult.cpp
+	account/client/cRoleResult.cpp
 	account/client/cAccount.cpp
 	account/client/cAccountEngine.cpp)
 	
@@ -144,6 +146,8 @@ SET( headers System.hpp
 	account/account/AccountEngine.hpp
 	account/agent/cAccount.hpp
 	account/agent/cAccountEngine.hpp
+	account/client/cLoginResult.hpp
+	account/client/cRoleResult.hpp
 	account/client/cAccount.hpp
 	account/client/cAccountEngine.hpp)
 	
