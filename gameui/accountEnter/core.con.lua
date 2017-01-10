@@ -17,7 +17,7 @@ function initValue()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	runAccountReward(value_, 14)
+	runRoleReward(value_, 14)
 	
 	mAccountName = rawValue_:getString(1)
 	mRoleId = rawValue_:getInt32(2)
@@ -28,9 +28,9 @@ function initValue()
 end
 
 function showNetConnect()
-	quickAccountReward(23)
+	quickRoleReward(23)
 end
 
 function showCreateUi()
-	quickAccountReward(21)
+	quickRoleReward(21)
 end

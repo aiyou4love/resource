@@ -11,11 +11,11 @@ function onEnter()
 end
 
 function onServerList()
-	quickAccountReward(16)
+	quickRoleReward(16)
 end
 
 function onCancel()
-	quickAccountReward(15)
+	quickRoleReward(15)
 	
 	mAccountName = ""
 	mRoleId = 0

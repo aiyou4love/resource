@@ -25,7 +25,7 @@ function runRoleCreate()
 	
 	rawValue_:pushString(mRoleName)
 	rawValue_:pushInt16(mRoleRace)
-	runAccountReward(value_, 22)
+	runRoleReward(value_, 22)
 	
 	local errorCode_ = rawValue_:getInt8(3)
 	
@@ -34,5 +34,5 @@ function runRoleCreate()
 end
 
 function showNetConnect()
-	quickAccountReward(23)
+	quickRoleReward(23)
 end

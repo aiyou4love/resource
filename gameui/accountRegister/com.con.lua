@@ -24,5 +24,5 @@ function onRegister()
 end
 
 function onCloseUi()
-	quickAccountReward(11)
+	quickRoleReward(11)
 end

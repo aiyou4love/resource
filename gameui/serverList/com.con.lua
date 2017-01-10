@@ -7,9 +7,9 @@ function onInputServer(nServerId)
 end
 
 function onSelectServer()
-	SelectServerId()
+	selectServerId()
 end
 
 function onReturnEnterUi()
-	quickAccountReward(9)
+	quickRoleReward(9)
 end

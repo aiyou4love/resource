@@ -12,7 +12,7 @@ function setServerId(nServerId)
 	mServerId = tonumber(nServerId)
 end
 
-function SelectServerId()
+function selectServerId()
 	if 0 == mServerId then
 		mUiHandle:printText("setServerId")
 		return
@@ -22,7 +22,7 @@ function SelectServerId()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
 	rawValue_:pushInt32(mServerId)
-	runAccountReward(value_, 20)
+	runRoleReward(value_, 20)
 	
 	valueMgr_:deleteValue(value_)
 end
@@ -33,7 +33,7 @@ function getRoleList()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	runAccountReward(value_, 19)
+	runRoleReward(value_, 19)
 	
 	local roleStr_ = rawValue_:getString(1)
 	mRoleList = assert(load(roleStr_))()
@@ -47,7 +47,7 @@ function getServerList()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	runAccountReward(value_, 18)
+	runRoleReward(value_, 18)
 	
 	local serverStr_ = rawValue_:getString(1)
 	mServerList = assert(load(serverStr_))()
@@ -60,7 +60,7 @@ function requestRoleList()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	runAccountReward(value_, 17)
+	runRoleReward(value_, 17)
 	
 	mErrorCode = rawValue_:getInt8(2)
 	

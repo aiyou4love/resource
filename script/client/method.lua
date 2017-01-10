@@ -1,48 +1,48 @@
-function runAccountReward(nValue, nRewardId)
-	local accountEngine_ = cAccountEngine.instance()
-	local account_ = accountEngine_:getAccount()
+function runRoleReward(nValue, nRewardId)
+	local roleEngine_ = cRoleEngine.instance()
+	local role_ = roleEngine_:getRole()
 	
 	local rewardEngine_ = RewardEngine.instance()
-	rewardEngine_:runReward(nRewardId, account_, nValue)
+	rewardEngine_:runReward(nRewardId, role_, nValue)
 end
 
-function quickAccountReward(nRewardId)
+function quickRoleReward(nRewardId)
 	local valueMgr_ = ValueMgr.instance()
 	local value_ = valueMgr_:createValue()
 	
-	runAccountReward(value_, nRewardId)
+	runRoleReward(value_, nRewardId)
 	
 	valueMgr_:deleteValue(value_)
 end
 
-function runAccountIfSelect(nValue)
-	local accountEngine_ = cAccountEngine.instance()
-	local account_ = accountEngine_:getAccount()
+function runRoleIfSelect(nValue)
+	local roleEngine_ = cRoleEngine.instance()
+	local role_ = roleEngine_:getRole()
 	
 	local selectEngine_ = SelectEngine.instance()
-	selectEngine_:runIfSelect(account_, nValue)
+	selectEngine_:runIfSelect(role_, nValue)
 end
 
-function quickAccountIfSelect(nSelectId)
+function quickRoleIfSelect(nSelectId)
 	local valueMgr_ = ValueMgr.instance()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
 	rawValue_:pushInt32(nSelectId)
-	runAccountIfSelect(value_)
+	runRoleIfSelect(value_)
 	
 	valueMgr_:deleteValue(value_)
 end
 
 function refreshUiScene()
-	quickAccountReward(1)
+	quickRoleReward(1)
 end
 
 function refreshGameScene()
-	quickAccountReward(2)
+	quickRoleReward(2)
 end
 
 function refreshExistScene()
-	quickAccountReward(3)
+	quickRoleReward(3)
 end
 

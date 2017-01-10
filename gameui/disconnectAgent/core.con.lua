@@ -13,7 +13,7 @@ function getIdleAgent()
 	local value_ = valueMgr_:createValue()
 	local rawValue_ = valueMgr_:getValue(value_)
 	
-	runAccountReward(value_, 24)
+	runRoleReward(value_, 24)
 	
 	local errorCode_ = rawValue_:getInt8(2);
 	valueMgr_:deleteValue(value_)
@@ -30,5 +30,5 @@ function getIdleAgent()
 end
 
 function connectAgent()
-	quickAccountReward(25)
+	quickRoleReward(25)
 end

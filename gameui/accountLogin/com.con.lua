@@ -26,5 +26,5 @@ function onLogin()
 end
 
 function onRegisterUi()
-	quickAccountReward(10)
+	quickRoleReward(10)
 end
