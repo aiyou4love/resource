@@ -27,6 +27,7 @@ set( sources Serialize.cpp
 	lua/LuaWriter.cpp
 	lua/LuaThread.cpp
 	lua/LuaEngine.cpp
+	random/RandomEngine.cpp
 	dump/Dump.cpp)
 	
 SET( headers Serialize.hpp
@@ -59,6 +60,7 @@ SET( headers Serialize.hpp
 	lua/LuaWriter.hpp
 	lua/LuaThread.hpp
 	lua/LuaEngine.hpp
+	random/RandomEngine.hpp
 	plugin/IPlugin.hpp
 	dump/Dump.hpp)
 	
