@@ -81,7 +81,7 @@ endforeach(src)
 
 add_library( ${PROJECT_NAME} SHARED ${SRCS} ${HDRS} )
 target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES}
-	lua serialize engine system curl)
+	lua serialize engine system curl zstd lz4)
 
 install (TARGETS ${PROJECT_NAME} DESTINATION aspect)
 
