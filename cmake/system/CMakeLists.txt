@@ -17,16 +17,6 @@ set( sources System.cpp
 	ui/console/ConsoleUi.cpp
 	ui/console/ConsoleScene.cpp
 	ui/console/ConsoleEngine.cpp
-	time/time/TimeAdjust.cpp
-	time/time/TimeBegin.cpp
-	time/time/TimeCount.cpp
-	time/time/TimeEnd.cpp
-	time/time/TimeStart.cpp
-	time/time/TimeDuration.cpp
-	time/time/ServerTime.cpp
-	time/time/TimeEngine.cpp
-	time/server/cServerTime.cpp
-	time/client/cServerTime.cpp
 	task/engine/TaskConfig.cpp
 	task/entity/DailyTask.cpp
 	task/entity/TaskAccept.cpp
@@ -88,22 +78,6 @@ SET( headers System.hpp
 	ui/console/ConsoleUi.hpp
 	ui/console/ConsoleScene.hpp
 	ui/console/ConsoleEngine.hpp
-	time/time/EtimeBegin.hpp
-	time/time/EtimeCount.hpp
-	time/time/EtimeEnd.hpp
-	time/time/EtimeStart.hpp
-	time/time/EtimeState.hpp
-	time/time/EtimeType.hpp
-	time/time/TimeAdjust.hpp
-	time/time/TimeBegin.hpp
-	time/time/TimeCount.hpp
-	time/time/TimeEnd.hpp
-	time/time/TimeStart.hpp
-	time/time/TimeDuration.hpp
-	time/time/ServerTime.hpp
-	time/time/TimeEngine.hpp
-	time/server/cServerTime.hpp
-	time/client/cServerTime.hpp
 	task/engine/EtaskType.hpp
 	task/engine/EopenType.hpp
 	task/engine/TaskConfig.hpp

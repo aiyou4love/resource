@@ -35,6 +35,7 @@ SET( headers Serialize.hpp
 	normal/normal/CommonMethod.hpp
 	normal/normal/Instance.hpp
 	normal/normal/DefaultValue.hpp
+	normal/normal/EcompressType.hpp
 	normal/class/ClassMethod.hpp
 	normal/convert/ConvertValue.hpp
 	normal/string/StringMethod.hpp 

@@ -75,7 +75,17 @@ set( sources Engine.cpp
 	count/IntArray.cpp
 	count/IntCount.cpp
 	count/IntEntity.cpp
-	count/IntIndex.cpp)
+	count/IntIndex.cpp
+	time/time/TimeAdjust.cpp
+	time/time/TimeBegin.cpp
+	time/time/TimeCount.cpp
+	time/time/TimeEnd.cpp
+	time/time/TimeStart.cpp
+	time/time/TimeDuration.cpp
+	time/time/ServerTime.cpp
+	time/time/TimeEngine.cpp
+	time/server/cServerTime.cpp
+	time/client/cServerTime.cpp)
 	
 SET( headers Engine.hpp
 	aspect/value/Buffer.hpp
@@ -158,7 +168,23 @@ SET( headers Engine.hpp
 	count/IntArray.hpp
 	count/IntCount.hpp
 	count/IntEntity.hpp
-	count/IntIndex.hpp)
+	count/IntIndex.hpp
+	time/time/EtimeBegin.hpp
+	time/time/EtimeCount.hpp
+	time/time/EtimeEnd.hpp
+	time/time/EtimeStart.hpp
+	time/time/EtimeState.hpp
+	time/time/EtimeType.hpp
+	time/time/TimeAdjust.hpp
+	time/time/TimeBegin.hpp
+	time/time/TimeCount.hpp
+	time/time/TimeEnd.hpp
+	time/time/TimeStart.hpp
+	time/time/TimeDuration.hpp
+	time/time/ServerTime.hpp
+	time/time/TimeEngine.hpp
+	time/server/cServerTime.hpp
+	time/client/cServerTime.hpp)
 	
 foreach(src IN ITEMS ${sources})
 	SET(SRCS ${SRCS} ${prefixs}/${src})
