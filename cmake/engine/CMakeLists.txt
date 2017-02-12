@@ -51,19 +51,19 @@ set( sources Engine.cpp
 	net/netIp/NetIpMgr.cpp
 	net/ioservice/IoService.cpp
 	net/session/ISessionRemove.cpp
-	net/session/Session.cpp
+	tcp/session/TcpSession.cpp
 	net/send/ISend.cpp
-	net/send/SelfSend.cpp
-	net/send/ServerSend.cpp
-	net/connect/ConnectInfo.cpp
-	net/connect/Connector.cpp
-	net/connect/ConnectorMgr.cpp
-	net/connect/ConnectEngine.cpp
-	net/connect/ConnectRemove.cpp
-	net/accept/AcceptorMgr.cpp
-	net/accept/AcceptEngine.cpp
-	net/accept/SessionMgr.cpp
-	net/accept/AcceptRemove.cpp
+	tcp/send/SelfTcpSend.cpp
+	tcp/send/ServerSend.cpp
+	tcp/connect/TcpConnectInfo.cpp
+	tcp/connect/TcpConnector.cpp
+	tcp/connect/TcpConnectorMgr.cpp
+	tcp/connect/TcpConnectEngine.cpp
+	tcp/connect/TcpConnectRemove.cpp
+	tcp/accept/TcpAcceptorMgr.cpp
+	tcp/accept/TcpAcceptEngine.cpp
+	tcp/accept/TcpSessionMgr.cpp
+	tcp/accept/TcpAcceptRemove.cpp
 	count/BitCount.cpp
 	count/CountEngine.cpp
 	count/CountIndex.cpp
@@ -144,19 +144,19 @@ SET( headers Engine.hpp
 	net/netIp/NetIpMgr.hpp
 	net/ioservice/IoService.hpp
 	net/session/ISessionRemove.hpp
-	net/session/Session.hpp
+	tcp/session/TcpSession.hpp
 	net/send/ISend.hpp
-	net/send/SelfSend.hpp
-	net/send/ServerSend.hpp
-	net/connect/ConnectInfo.hpp
-	net/connect/Connector.hpp
-	net/connect/ConnectorMgr.hpp
-	net/connect/ConnectEngine.hpp
-	net/connect/ConnectRemove.hpp
-	net/accept/AcceptorMgr.hpp
-	net/accept/AcceptEngine.hpp
-	net/accept/SessionMgr.hpp
-	net/accept/AcceptRemove.hpp
+	tcp/send/SelfTcpSend.hpp
+	tcp/send/ServerSend.hpp
+	tcp/connect/TcpConnectInfo.hpp
+	tcp/connect/TcpConnector.hpp
+	tcp/connect/TcpConnectorMgr.hpp
+	tcp/connect/TcpConnectEngine.hpp
+	tcp/connect/TcpConnectRemove.hpp
+	tcp/accept/TcpAcceptorMgr.hpp
+	tcp/accept/TcpAcceptEngine.hpp
+	tcp/accept/TcpSessionMgr.hpp
+	tcp/accept/TcpAcceptRemove.hpp
 	count/BitCount.hpp
 	count/CountEngine.hpp
 	count/CountIndex.hpp
